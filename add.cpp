@@ -23,7 +23,7 @@ int main(void)
 	sum = Add(firstNum,secondNum);   // adding two numbers and storing it in sum
 	
 	// printing it with nice format
-	cout<<endl<<"Sum is "<<sum<<endl;  
+	cout<<endl<<"Sum of "<<firstNum<<" and "<<secondNum<<" is "<<sum<<endl;  
 }
 
 
