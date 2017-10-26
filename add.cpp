@@ -8,6 +8,8 @@
 #include <iostream>    //input output stream library
 using namespace std;   //std(standard) namespace contains input ouput functions
 
+double Add(double x,double y);
+
 // main
 int main(void)
 {
@@ -17,8 +19,15 @@ int main(void)
 	
 	cout<<"Enter two numbers: ";
 	cin>>firstNum>>secondNum;    //taking user input 
-	sum = firstNum+secondNum;   // adding two numbers and storing it in sum
+	
+	sum = Add(firstNum,secondNum);   // adding two numbers and storing it in sum
 	
 	// printing it with nice format
 	cout<<endl<<"Sum of "<<firstNum<<" and "<<secondNum<<" is "<<sum<<endl;  
+}
+
+
+double Add(double x,double y)
+{
+	return (x+y);
 }
